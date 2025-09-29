@@ -22,7 +22,7 @@ doubleEvent = args.doubleEvent
 
 
 output_object = TF.TopologyFunctions(input_file)
-clustered_data = output_object.ReturnClusteredData(cluster_scale=cluster_scale, num_evts=2000, doubleEvent=doubleEvent)
+clustered_data = output_object.ReturnClusteredData(cluster_scale=cluster_scale, num_evts=num_evts, doubleEvent=doubleEvent)
 with open(output_file, 'wb') as fout:
     pkl.dump(clustered_data, fout)
 
